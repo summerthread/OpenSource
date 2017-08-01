@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(nonatomic,strong)FBKVOController *kvoController;
 @end
 
 @implementation ViewController
@@ -25,5 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark 懒加载
+- (FBKVOController *)kvoController{
+    if (_kvoController) {
+        _kvoController = [[FBKVOController alloc]initWithObserver:self];
+    }
+    return _kvoController;
+}
 @end

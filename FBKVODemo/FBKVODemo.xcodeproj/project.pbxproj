@@ -55,6 +55,7 @@
 		B07CC0C41F30748600FBFD76 /* FBKVODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBKVODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07CC0C81F30748600FBFD76 /* FBKVODemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBKVODemoUITests.m; sourceTree = "<group>"; };
 		B07CC0CA1F30748600FBFD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07CC0D61F308C4B00FBFD76 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 				B07CC0B11F30748600FBFD76 /* LaunchScreen.storyboard */,
 				B07CC0B41F30748600FBFD76 /* Info.plist */,
 				B07CC0A31F30748600FBFD76 /* Supporting Files */,
+				B07CC0D61F308C4B00FBFD76 /* PrefixHeader.pch */,
 			);
 			path = FBKVODemo;
 			sourceTree = "<group>";
@@ -504,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5FDB2LXCK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FBKVODemo/PrefixHeader.pch";
 				INFOPLIST_FILE = FBKVODemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5FDB2LXCK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FBKVODemo/PrefixHeader.pch";
 				INFOPLIST_FILE = FBKVODemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -595,6 +599,7 @@
 				B07CC0CF1F30748600FBFD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B07CC0D01F30748600FBFD76 /* Build configuration list for PBXNativeTarget "FBKVODemoTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +608,7 @@
 				B07CC0D21F30748600FBFD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B07CC0D31F30748600FBFD76 /* Build configuration list for PBXNativeTarget "FBKVODemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +617,7 @@
 				B07CC0D51F30748600FBFD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
